@@ -2,7 +2,7 @@ import React from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 import "animate.css";
-import HomePage from "./pages/home";
+import HomePage from "./pages/homePage";
 
 
 
