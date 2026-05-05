@@ -9,7 +9,7 @@ import ClientReviews from "../components/review"
 import CallToAction from "../components/scroill"
 
 
-const Home = () => {
+const HomePage = () => {
   return (
     <>
     <Navbar/>
@@ -29,4 +29,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default HomePage
