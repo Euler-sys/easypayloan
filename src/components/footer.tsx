@@ -1,88 +1,98 @@
-import { FaFacebookF, FaTwitter,  FaPhone, FaEnvelope } from "react-icons/fa";
-import logo from '../assets/LOGO-removebg-preview.png'
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer className="bg-[#ccc] text-white py-10">
-      <div className="max-w-6xl mx-auto px-6 lg:px-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-          
-          {/* About United Way Benefits */}
-          <div>
-            <img src={logo} width="200" className="m-auto" />
-            <p className="text-black mt-3 text-sm">
-              Empowering individuals and families by providing financial assistance, 
-              health services, and community support programs.
-            </p>
-          </div>
+    <footer className="text-white px-6 py-14 md:px-16 bg-gradient-to-r from-green-600 via-green-700 to-green-800 shadow-md">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
 
-          {/* Navigation Links */}
-          <div>
-            <h3 className="text-lg font-semibold text-blue-800 ">Quick Links</h3>
-            <ul className="mt-3 space-y-2 text-black">
-              <li><a href="#" className="hover:text-blue-800 transition">Home</a></li>
-              <li><a href="#" className="hover:text-blue-800 transition">About Us</a></li>
-              <li><a href="#" className="hover:text-blue-800 transition">Programs</a></li>
-              <li><a href="#" className="hover:text-blue-800 transition">Resources</a></li>
-              <li><a href="#" className="hover:text-blue-800 transition">Contact</a></li>
-            </ul>
-          </div>
-
-          {/* Contact Information
-          <div>
-            <h3 className="text-lg font-semibold text-blue-800">Contact Us</h3>
-            <div className="text-black mt-3 text-sm flex flex-col justify-center ">
-                <div className="flex gap-2  "> <FaLocationArrow/> <p>123 Hope Street, New York, NY 10001</p></div>
-                <div className="flex gap-2  "> <FaPhone/> <p>(123) 456-7890 </p></div>
-                <div className="flex gap-2  "> <FaEnvelope/> <p>support@unitedwaybenefits.org</p></div>
-             
-            
-             
+        {/* BRAND */}
+        <div>
+          <div className="flex items-center gap-2">
+            <div className="bg-amber-400 rounded-full w-8 h-8 flex items-center justify-center shadow-md">
+              <svg
+                className="w-4 h-4 text-green-800"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                />
+              </svg>
             </div>
-          </div> */}
-        </div>
 
-        {/* Social Media & Newsletter Section */}
-        <div className="mt-8 flex flex-col md:flex-row items-center justify-between text-center">
-          
-          {/* Social Media Icons */}
-          <div className="flex space-x-4 mb-4 md:mb-0">
-            <a href="#" className="p-3 bg-gray-800 rounded-full hover:bg-blue-500 transition">
-              <FaFacebookF className="text-white text-lg" />
-            </a>
-            <a href="#" className="p-3 bg-gray-800 rounded-full hover:bg-blue-500 transition">
-              <FaTwitter className="text-white text-lg" />
-            </a>
-            <a href="#" className="p-3 bg-gray-800 rounded-full hover:bg-blue-500 transition">
-              <FaPhone className="text-white text-lg" />
-            </a>
-            <a href="#" className="p-3 bg-gray-800 rounded-full hover:bg-blue-500 transition">
-              <FaEnvelope className="text-white text-lg" />
-            </a>
+            <span className="text-xl font-bold text-white select-none">
+              EasyPayLoan
+            </span>
           </div>
 
-          {/* Newsletter Subscription */}
-          <div className="mt-4 md:mt-0">
-            <h3 className="text-lg font-semibold text-blue-800">Subscribe to Our Newsletter</h3>
-            <div className="flex mt-3">
-              <input 
-                type="email" 
-                placeholder="Enter your email" 
-                className="px-4 py-2 rounded-l-md text-gray-900 focus:outline-none"
-              />
-              <button className="bg-black px-4 py-2 rounded-r-md hover:bg-blue-800 transition">
-                Subscribe
-              </button>
-            </div>
+          <p className="text-sm leading-relaxed mt-3 opacity-95">
+            Fast, secure personal loans designed to help you get approved and funded quickly.
+          </p>
+
+          <div className="mt-4 space-y-1 text-sm opacity-90">
+            <p>FDIC Compliant</p>
+            <p>BBB A+ Rated</p>
+            <p>NMLS #195624</p>
           </div>
         </div>
 
-        {/* Copyright */}
-        <p className="text-gray-800 text-center text-sm mt-6">
-          &copy; {new Date().getFullYear()} United Way Benefits. All rights reserved.
+        {/* NAVIGATION */}
+        <div>
+          <h3 className="font-semibold mb-4">Navigation</h3>
+          <ul className="space-y-2 text-sm">
+            <li><a href="#advantages" className="hover:text-white/80">Why Choose Us</a></li>
+            <li><a href="#process" className="hover:text-white/80">How It Works</a></li>
+            <li><a href="#mission" className="hover:text-white/80">Our Mission</a></li>
+            <li><a href="#faq" className="hover:text-white/80">FAQs</a></li>
+            <li><a href="#apply" className="hover:text-white/80">Apply Now</a></li>
+          </ul>
+        </div>
+
+        {/* LEGAL */}
+        <div>
+          <h3 className="font-semibold mb-4">Legal</h3>
+          <ul className="space-y-2 text-sm">
+            <li><a href="#" className="hover:text-white/80">Privacy Policy</a></li>
+            <li><a href="#" className="hover:text-white/80">Terms of Service</a></li>
+            <li><a href="#" className="hover:text-white/80">Responsible Lending</a></li>
+            <li><a href="#" className="hover:text-white/80">NMLS Registry</a></li>
+          </ul>
+        </div>
+
+        {/* CONTACT */}
+        <div>
+          <h3 className="font-semibold mb-4">Contact</h3>
+          <ul className="space-y-2 text-sm">
+            <li>support@easypayloan.com</li>
+            <li>1-888-555-0100</li>
+            <li>24/7 Live Chat Support</li>
+            <li>Nationwide Coverage</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* BOTTOM */}
+      <div className="border-t border-white/20 mt-10 pt-6 text-sm text-center space-y-3">
+
+        <p>
+          © 2019–2026 EasyPayLoan. All rights reserved.
         </p>
+
+        <div className="flex flex-wrap justify-center gap-4 text-sm">
+          <a href="#" className="hover:text-white/80">Privacy</a>
+          <a href="#" className="hover:text-white/80">Terms</a>
+          <a href="#" className="hover:text-white/80">Accessibility</a>
+        </div>
+
+        <p className="max-w-3xl mx-auto text-xs leading-relaxed opacity-90">
+          APR ranges from 5.99% to 24.99%. Loan amounts from $1,000 to $80,000.
+          Repayment terms 12–60 months. All loans subject to credit approval.
+          EasyPayLoan Financial Corp, NMLS #195624.
+        </p>
+
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}
