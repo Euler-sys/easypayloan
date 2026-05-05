@@ -38,7 +38,7 @@ const HeroSection = () => {
           {/* CTA */}
           <div className="flex flex-col sm:flex-row gap-4 mt-10 justify-center">
             <Link
-              to="/loan-application"
+              to="/apply"
               className="px-8 py-3.5 bg-green-800 text-white rounded-full hover:bg-green-900 transition font-medium shadow-lg text-center"
             >
               Apply in 10 Minutes

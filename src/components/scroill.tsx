@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function CallToAction() {
   const scrollToApply = () => {
     const el = document.getElementById("apply");
@@ -18,13 +20,17 @@ export default function CallToAction() {
           Free application, 10 minutes.
         </p>
 
-        <button
+        <Link to={'/apply'}>
+          <button 
           onClick={scrollToApply}
           className="relative bg-white text-green-800 px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:bg-gray-100 transition duration-300 animate-pulse"
         >
           Start My Application Now
         </button>
 
+        </Link>
+
+      
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm md:text-base text-green-100">
           {[
             "Zero upfront fees or charges",
